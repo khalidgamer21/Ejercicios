@@ -10,8 +10,9 @@ public class ArrayList1 {
     public static void main(String[] args) {
 
         List<Integer> numeros = new ArrayList<>();
+       // List<Integer> numeros = Arrays.asList(23, 45, 12, 78, 34, 56, 11, 90, 5, 67);
 
-
+//agregando números a la lista
         numeros.add(23);
         numeros.add(45);
         numeros.add(12);
