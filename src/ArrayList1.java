@@ -5,24 +5,19 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+import java.util.Random;
 public class ArrayList1 {
     public static void main(String[] args) {
 
         List<Integer> numeros = new ArrayList<>();
        // List<Integer> numeros = Arrays.asList(23, 45, 12, 78, 34, 56, 11, 90, 5, 67);
 
-//agregando números a la lista
-        numeros.add(23);
-        numeros.add(45);
-        numeros.add(12);
-        numeros.add(78);
-        numeros.add(34);
-        numeros.add(56);
-        numeros.add(11);
-        numeros.add(90);
-        numeros.add(5);
-        numeros.add(67);
+        Random random = new Random();
+
+        // Generate 10 random numbers between 0 and 100
+        for (int i = 0; i < 10; i++) {
+            numeros.add(random.nextInt(101)); // 101 is exclusive upper bound
+        }
 
         int maximo = Collections.max(numeros);
         int minimo = Collections.min(numeros);
